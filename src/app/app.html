@@ -1,0 +1,18 @@
+<div [attr.dir]="direction()" class="min-h-screen">
+  <app-navbar />
+  <main id="main" role="main" tabindex="-1">
+    <app-hero />
+    <app-about />
+    <app-services />
+    @defer (hydrate on viewport) {
+      <app-gallery />
+    }
+    @defer (hydrate on viewport) {
+      <app-why-choose-us />
+    }
+    @defer (hydrate on viewport) {
+      <app-contact />
+    }
+  </main>
+  <app-footer />
+</div>

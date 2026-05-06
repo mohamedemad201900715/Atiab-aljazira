@@ -1,0 +1,31 @@
+<section id="home" aria-labelledby="hero-heading" class="relative overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.15),_transparent_50%)]"></div>
+  <div class="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-2 lg:items-center lg:px-8 lg:py-28">
+    <div class="space-y-6">
+      <p class="inline-flex rounded-full border border-cyan-200/20 bg-cyan-300/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">{{ 'hero.badge' | t }}</p>
+      <h1 id="hero-heading" class="text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+        {{ 'hero.title' | t }}
+      </h1>
+      <p class="max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
+        {{ 'hero.description' | t }}
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">{{ 'hero.quote' | t }}</a>
+        <a href="#contact" class="rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300">{{ 'hero.contact' | t }}</a>
+      </div>
+    </div>
+
+    <div class="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-2xl shadow-cyan-500/10 backdrop-blur-md">
+      <img
+        src="/images/ships.jpeg"
+        [alt]="'hero.imageAlt' | t"
+        class="h-[420px] w-full rounded-2xl object-cover"
+        width="1200"
+        height="840"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </div>
+  </div>
+</section>

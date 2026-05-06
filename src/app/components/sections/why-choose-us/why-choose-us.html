@@ -1,0 +1,17 @@
+<section id="why-choose-us" aria-labelledby="why-heading" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+  <div class="mb-12 text-center">
+    <p class="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">{{ 'whyChooseUs.tag' | t }}</p>
+    <h2 id="why-heading" class="mt-3 text-3xl font-extrabold text-white sm:text-4xl">{{ 'whyChooseUs.title' | t }}</h2>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    @for (item of ('whyChooseUs.pillars' | t); track item.title) {
+      <article class="rounded-2xl border border-white/10 bg-white/5 p-6 text-center shadow-lg shadow-slate-900/40 transition hover:border-cyan-300/40">
+        <p class="text-3xl" aria-hidden="true">{{ item.icon }}</p>
+        <p class="mt-3 text-3xl font-extrabold text-cyan-300">{{ item.stat }}</p>
+        <h3 class="mt-2 text-lg font-semibold text-white">{{ item.title }}</h3>
+        <p class="mt-2 text-sm text-slate-300">{{ item.detail }}</p>
+      </article>
+    }
+  </div>
+</section>

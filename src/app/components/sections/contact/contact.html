@@ -1,0 +1,38 @@
+<section id="contact" aria-labelledby="contact-heading" class="bg-slate-900/50 py-20">
+  <div class="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-2 lg:px-8">
+    <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-slate-900/40">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">{{ 'contact.tag' | t }}</p>
+      <h2 id="contact-heading" class="mt-3 text-3xl font-extrabold text-white">{{ 'contact.title' | t }}</h2>
+      <form class="mt-7 space-y-4" method="post" novalidate>
+        <div>
+          <label for="contact-name" class="mb-2 block text-sm text-slate-300">{{ 'contact.name' | t }}</label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" required class="w-full rounded-xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white outline-none ring-cyan-300 transition focus:ring-2" [placeholder]="'contact.namePlaceholder' | t" />
+        </div>
+        <div>
+          <label for="contact-email" class="mb-2 block text-sm text-slate-300">{{ 'contact.email' | t }}</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" required inputmode="email" class="w-full rounded-xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white outline-none ring-cyan-300 transition focus:ring-2" [placeholder]="'contact.emailPlaceholder' | t" />
+        </div>
+        <div>
+          <label for="contact-message" class="mb-2 block text-sm text-slate-300">{{ 'contact.message' | t }}</label>
+          <textarea id="contact-message" name="message" rows="4" required class="w-full rounded-xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-white outline-none ring-cyan-300 transition focus:ring-2" [placeholder]="'contact.messagePlaceholder' | t"></textarea>
+        </div>
+        <button type="submit" class="w-full rounded-xl bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">{{ 'contact.send' | t }}</button>
+      </form>
+    </div>
+
+    <div class="space-y-6">
+      <address class="not-italic rounded-3xl border border-white/10 bg-white/5 p-8">
+        <h3 class="text-xl font-semibold text-white">{{ 'contact.details' | t }}</h3>
+        <p class="mt-3 text-slate-300">
+          <a href="tel:+971503380164" class="hover:text-cyan-300">{{ 'contact.phone' | t }}</a>
+        </p>
+        <p class="text-slate-300">
+          <a href="mailto:info@atyab-aljazeera.com" class="hover:text-cyan-300">{{ 'contact.emailText' | t }}</a>
+        </p>
+        <a href="https://wa.me/971503380164" target="_blank" rel="noopener noreferrer" aria-label="Chat with Atyab Al Jazeera on WhatsApp" class="mt-5 inline-flex rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white transition hover:bg-emerald-400">
+          {{ 'contact.whatsapp' | t }}
+        </a>
+      </address>
+    </div>
+  </div>
+</section>

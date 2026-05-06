@@ -1,0 +1,49 @@
+<header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl theme-bg-header">
+  <nav aria-label="Primary" class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+    <a href="#home" aria-label="Atyab Al Jazeera - Home" class="flex min-w-0 items-center gap-2 text-white theme-text-main">
+      <img src="/images/logo-ajt.png" alt="Atyab Al Jazeera logo" width="36" height="36" class="h-9 w-9 rounded-full object-cover border border-white/20" />
+      <span class="max-w-[150px] truncate text-sm font-bold leading-tight tracking-wide md:max-w-[180px] lg:max-w-[240px] lg:text-base">{{ 'nav.brand' | t }}</span>
+    </a>
+    <div class="hidden items-center gap-5 md:flex">
+      @for (link of ('nav.links' | t); track link.label) {
+        <a [href]="link.href" class="whitespace-nowrap text-sm font-medium text-slate-200 transition hover:text-cyan-300 theme-text-muted">{{ link.label }}</a>
+      }
+      <button type="button" (click)="toggleLanguage()" class="whitespace-nowrap rounded-full border border-white/20 px-3 py-1 text-xs font-semibold text-slate-100 transition hover:border-cyan-300">
+        {{ 'nav.languageLabel' | t }}: {{ 'nav.languageButton' | t }}
+      </button>
+      <button type="button" (click)="toggleTheme()" class="whitespace-nowrap rounded-full border border-white/20 px-3 py-1 text-xs font-semibold text-slate-100 transition hover:border-cyan-300">
+        {{ 'nav.themeLabel' | t }}: {{ themeToggleLabel() }}
+      </button>
+      <a href="#contact" class="whitespace-nowrap rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-cyan-300">{{ 'nav.quote' | t }}</a>
+    </div>
+
+    <button
+      type="button"
+      class="inline-flex rounded-lg border border-white/20 p-2 text-slate-100 md:hidden"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="mobileMenuOpen()"
+      aria-controls="mobile-menu"
+      aria-label="Toggle navigation"
+    >
+      <span class="text-lg">{{ mobileMenuOpen() ? '✕' : '☰' }}</span>
+    </button>
+  </nav>
+
+  @if (mobileMenuOpen()) {
+    <div id="mobile-menu" class="border-t border-white/10 bg-slate-900/95 px-6 py-4 md:hidden">
+      <div class="flex flex-col gap-4">
+        @for (link of ('nav.links' | t); track link.label) {
+          <a [href]="link.href" (click)="closeMenu()" class="text-sm font-medium text-slate-200 theme-text-muted">{{ link.label }}</a>
+        }
+        <div class="mt-2 flex gap-2">
+          <button type="button" (click)="toggleLanguage()" class="rounded-full border border-white/20 px-3 py-1 text-xs font-semibold text-slate-100">
+            {{ 'nav.languageLabel' | t }}: {{ 'nav.languageButton' | t }}
+          </button>
+          <button type="button" (click)="toggleTheme()" class="rounded-full border border-white/20 px-3 py-1 text-xs font-semibold text-slate-100">
+            {{ 'nav.themeLabel' | t }}: {{ themeToggleLabel() }}
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+</header>

@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter/index.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #050915;
+  color: #f8fafc;
+}
+
+body.theme-light {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+body.theme-light .theme-bg-header {
+  background-color: rgba(248, 250, 252, 0.9) !important;
+  border-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+body.theme-light .theme-text-main {
+  color: #0f172a !important;
+}
+
+body.theme-light .theme-text-muted {
+  color: #334155 !important;
+}
+
+body.theme-light .bg-slate-900\/50,
+body.theme-light .bg-slate-900\/70,
+body.theme-light .bg-slate-900\/95,
+body.theme-light .bg-slate-950\/60,
+body.theme-light .bg-slate-950\/70,
+body.theme-light .bg-slate-950 {
+  background-color: #e2e8f0 !important;
+}
+
+body.theme-light .bg-white\/5 {
+  background-color: rgba(148, 163, 184, 0.15) !important;
+}
+
+body.theme-light .border-white\/10,
+body.theme-light .border-white\/20,
+body.theme-light .border-white\/25 {
+  border-color: rgba(15, 23, 42, 0.15) !important;
+}
+
+body.theme-light .text-white {
+  color: #5278af !important
+}
+
+body.theme-light .text-slate-100,
+body.theme-light .text-slate-200,
+body.theme-light .text-slate-300,
+body.theme-light .text-slate-400,
+body.theme-light .text-slate-500 {
+  color: #5278af !important;
+}
+
+body.theme-light .text-cyan-300 {
+  color: #60c9c1 !important;
+}
+
+body.theme-light .hover\:text-cyan-300:hover {
+  color: #0f766e !important;
+}
+
+body.theme-light .bg-cyan-400 {
+  background-color: #0f766e !important;
+}
+
+body.theme-light .hover\:bg-cyan-300:hover {
+  background-color: #0d9488 !important;
+}
+
+body.theme-light .bg-cyan-400.text-slate-900 {
+  color: #f8fafc !important;
+}
+
+body.theme-light .hover\:border-cyan-300:hover,
+body.theme-light .border-cyan-300\/40,
+body.theme-light .border-cyan-300\/50 {
+  border-color: #0f766e !important;
+}

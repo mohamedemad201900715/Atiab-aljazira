@@ -1,0 +1,28 @@
+<section id="about" aria-labelledby="about-heading" class="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+  <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+    <div class="space-y-5">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">{{ 'about.tag' | t }}</p>
+      <h2 id="about-heading" class="text-3xl font-extrabold text-white sm:text-4xl">{{ 'about.title' | t }}</h2>
+      <div class="inline-flex items-center gap-3 rounded-2xl border border-white/15 bg-white/5 px-4 py-3">
+        <img src="/images/logo-stamp.png" alt="Atyab Al Jazeera official company stamp" width="64" height="64" loading="lazy" decoding="async" class="h-16 w-16 rounded-full object-cover bg-white" />
+        <p class="text-xs font-semibold uppercase tracking-[0.15em] text-cyan-300">Official Company Stamp</p>
+      </div>
+      <p class="leading-relaxed text-slate-300">
+        {{ 'about.p1' | t }}
+      </p>
+      <p class="leading-relaxed text-slate-300">
+        {{ 'about.p2' | t }}
+      </p>
+    </div>
+    <div class="rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-xl shadow-cyan-500/10">
+      <div class="grid grid-cols-2 gap-5 text-center">
+        @for (stat of ('about.stats' | t); track stat.label) {
+          <div class="rounded-2xl bg-white/5 p-5">
+            <p class="text-3xl font-extrabold text-cyan-300">{{ stat.value }}</p>
+            <p class="mt-2 text-sm text-slate-300">{{ stat.label }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
