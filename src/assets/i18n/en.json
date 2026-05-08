@@ -16,22 +16,22 @@
     "themeButton": "Light"
   },
   "hero": {
-    "badge": "UAE General Trading",
-    "title": "Global Trade & Logistics Solutions You Can Trust",
-    "description": "Atyab Al Jazeera delivers reliable import, export, and logistics operations with a strong global partner network, transparent communication, and on-time execution.",
+    "badge": "Egypt ↔ UAE Trade Specialists",
+    "title": "Direct Import & Export Between Egypt and the UAE",
+    "description": "Atyab Al Jazeera focuses on one thing: moving goods reliably between Egypt and the United Arab Emirates with transparent communication and on-time execution.",
     "quote": "Get a Quote",
     "contact": "Contact Us",
-    "imageAlt": "Cargo container logistics operations"
+    "imageAlt": "Cargo containers at port"
   },
   "about": {
     "tag": "About Us",
-    "title": "A trusted UAE gateway for global commerce",
-    "p1": "Based in the United Arab Emirates, Atyab Al Jazeera specializes in general trading, import, and export solutions for businesses seeking efficient market access and dependable supply movement.",
-    "p2": "Our leadership combines regional expertise with international logistics know-how, enabling clients to scale confidently across multiple industries and destinations.",
+    "title": "Specialists in the Egypt – UAE trade corridor",
+    "p1": "Based in the United Arab Emirates, Atyab Al Jazeera handles general trading, import, and export between Egypt and the UAE. We focus on a single corridor so we can do it well.",
+    "p2": "We work directly with shippers and consignees, keep paperwork clear, and communicate in Arabic and English so nothing gets lost in translation.",
     "stats": [
-      { "value": "12+", "label": "Years Experience" },
-      { "value": "35+", "label": "Trade Corridors" },
-      { "value": "1000+", "label": "Completed Shipments" },
+      { "value": "EG ↔ AE", "label": "Specialty Corridor" },
+      { "value": "Direct", "label": "No Middlemen" },
+      { "value": "AR / EN", "label": "Bilingual Service" },
       { "value": "24/7", "label": "Client Support" }
     ]
   },
@@ -41,18 +41,18 @@
     "items": [
       {
         "icon": "📥",
-        "title": "Import Services",
-        "description": "Streamlined sourcing, compliance, and customs coordination to bring products into the UAE market securely and efficiently."
+        "title": "Import from Egypt to UAE",
+        "description": "Bringing Egyptian products into the UAE market with clear documentation and customs coordination on both sides."
       },
       {
         "icon": "📤",
-        "title": "Export Services",
-        "description": "End-to-end export handling from UAE to international destinations with clear documentation and timely movement."
+        "title": "Export from UAE to Egypt",
+        "description": "Handling export shipments from the UAE to Egypt with accurate paperwork and reliable on-time movement."
       },
       {
         "icon": "🚢",
-        "title": "Logistics & Shipping",
-        "description": "Integrated freight planning across sea, air, and land with trusted carrier networks and real-time shipment updates."
+        "title": "Shipping & Customs",
+        "description": "Sea and air freight between Egypt and the UAE with customs clearance and shipment tracking."
       }
     ]
   },
@@ -63,12 +63,12 @@
   },
   "whyChooseUs": {
     "tag": "Why Choose Us",
-    "title": "Built on trust, speed, and global capability",
+    "title": "Focused on doing one corridor well",
     "pillars": [
-      { "icon": "✅", "title": "Reliability", "stat": "99%", "detail": "On-time operational consistency" },
-      { "icon": "⚡", "title": "Speed", "stat": "48h", "detail": "Fast quotation turnaround" },
-      { "icon": "🌍", "title": "Global Network", "stat": "40+", "detail": "Countries connected" },
-      { "icon": "🏆", "title": "Experience", "stat": "12+", "detail": "Years in international trade" }
+      { "icon": "🎯", "title": "Focused", "stat": "EG ↔ AE", "detail": "One corridor, done right" },
+      { "icon": "⚡", "title": "Fast Quotes", "stat": "48h", "detail": "Quick quotation turnaround" },
+      { "icon": "✅", "title": "Reliable", "stat": "On-time", "detail": "On-time shipment execution" },
+      { "icon": "🤝", "title": "Direct", "stat": "No middlemen", "detail": "We deal with shippers directly" }
     ]
   },
   "contact": {
@@ -87,13 +87,13 @@
     "whatsapp": "WhatsApp Us"
   },
   "footer": {
-    "description": "Premium UAE general trading, import, export, and logistics solutions focused on trust, speed, and global reach.",
+    "description": "UAE-based general trading specializing in import and export between Egypt and the United Arab Emirates.",
     "quickLinks": "Quick Links",
     "social": "Social",
     "copyright": "All rights reserved."
   },
   "seo": {
-    "title": "Atyab Al Jazeera | General Trading Company UAE",
-    "description": "Atyab Al Jazeera delivers reliable import, export, and logistics solutions across global trade corridors from the UAE."
+    "title": "Atyab Al Jazeera | Egypt – UAE Import & Export",
+    "description": "Atyab Al Jazeera handles direct import and export between Egypt and the United Arab Emirates with reliable shipping and customs clearance."
   }
 }
